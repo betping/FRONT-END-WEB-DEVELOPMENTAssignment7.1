@@ -1,0 +1,7 @@
+<h3> List of users who's age is more than 27' : </h3>
+<hr>
+<div *ngFor = "let user of userList" >
+  
+    <span *ngIf= "user.age > 27" [ngStyle] ="{'color':'blue'}"> Name:{{user.name}}, Profession:{{user.profession}} </span>
+
+</div>
